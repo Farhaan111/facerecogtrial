@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for, jsonify
 import cv2
 import face_recognition
+import face_recognition_models
 import numpy as np
 import os
 
