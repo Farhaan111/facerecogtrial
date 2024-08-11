@@ -11,9 +11,9 @@ app = Flask(__name__)
 known_face_encodings = []
 known_face_names = []
 
-for label in os.listdir('labeled_images'):
-    for filename in os.listdir(f'labeled_images/{label}'):
-        image_path = f'labeled_images/{label}/{filename}'
+for label in os.listdir('peak1/labeled_images'):
+    for filename in os.listdir(f'peak1/labeled_images/{label}'):
+        image_path = f'peak1/labeled_images/{label}/{filename}'
         image = face_recognition.load_image_file(image_path)
         image_encoding = face_recognition.face_encodings(image)[0]
         known_face_encodings.append(image_encoding)
