@@ -1,1 +1,2 @@
 # facerecogtrial
+setuptools
